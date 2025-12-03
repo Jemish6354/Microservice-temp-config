@@ -1,1 +1,7 @@
 
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # aa service(service registry) ne register na kare
+    fetch-registry: false # service registry ne fetch na karva de
