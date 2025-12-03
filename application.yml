@@ -1,7 +1,9 @@
 
 eureka:
   instance:
-    hostname: localhost
+    prefer-ip-address: true
   client:
-    register-with-eureka: false # aa service(service registry) ne register na kare
-    fetch-registry: false # service registry ne fetch na karva de
+    register-with-eureka: true 
+    fetch-registry: true
+    service-url:
+        defaultZone: http://localhost:8761/eureka
